@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Social Media Mosaic</title>
+        <!-- Bootstrap 5.3 CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                crossorigin="anonymous">
+        <!-- Google Font (optional) -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <style>
+                :root {
+                        --bg: #f3f3f3;
+                        --card: #ffffff;
+                        --purple: #7b5cff;
+                        --purple-200: #a48fff;
+                        --lilac: #e7ddff;
+                        --amber: #ffc648;
+                        --text: #0f0f10;
+                        --muted: #6b6b6b;
+                        --radius: 22px;
+                }
+
+                img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: var(--radius);
+                }
+
+                html,
+                body {
+                        background: var(--bg);
+                        font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                }
+
+                .tile {
+                        background: var(--card);
+                        border: 0;
+                        border-radius: var(--radius);
+                        box-shadow: 0 6px 14px rgba(0, 0, 0, .06);
+                        padding: 22px;
+                        height: 100%;
+                }
+
+                .tile.purple {
+                        background: var(--purple);
+                        color: #fff;
+                }
+
+                .tile.lilac {
+                        background: var(--lilac);
+                }
+
+                .tile.amber {
+                        background: var(--amber);
+                }
+
+                .title-xl {
+                        font-weight: 800;
+                        letter-spacing: .2px;
+                }
+
+                .title-lg {
+                        font-weight: 800;
+                }
+
+                .lead-sm {
+                        color: #fff;
+                        opacity: .9;
+                }
+
+                .muted {
+                        color: var(--muted);
+                }
+
+                .badge-star {
+                        display: inline-flex;
+                        gap: 6px;
+                        align-items: center;
+                }
+
+                .badge-star i {
+                        width: 16px;
+                        height: 16px;
+                        background: #ffd84d;
+                        border-radius: 50%;
+                        display: inline-block;
+                }
+
+                .btn-ghost {
+                        background: #ffe79a;
+                        color: #222;
+                        border: 0;
+                        border-radius: 999px;
+                        padding: 10px 18px;
+                        font-weight: 700;
+                }
+
+                .grid {
+                        row-gap: 22px;
+                }
+
+                .Column3 {
+                        height: 100%;
+                }
+        </style>
+</head>
+
+<body>
+        <main class="container py-5">
+                <div class="row grid">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column gap-3">
+                                <div class="tile">
+                                        <h3 class="title-lg mb-3">Create and schedule content <span
+                                                        style="color:var(--purple);">quicker.</span></h3>
+                                        <img src="assets/images/illustration-create-post.webp" alt="">
+                                </div>
+                                <div class="tile amber">
+                                        <h4 class="mb-3 title-lg">Write your content using AI.</h4>
+                                        <img src="assets/images/illustration-ai-content.webp" alt="AI Writing Example"
+                                                class="img-fluid rounded">
+                                </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+                                <div class="tile purple text-center">
+                                        <h1 class="title-xl display-6">Social Media <span class="fw-bold">10x</span>
+                                                Faster with AI</h1>
+                                        <div class="mt-3 badge-star">
+                                                <!-- <i></i><i></i><i></i><i></i><i></i> -->
+                                                <img src="assets/images/illustration-five-stars.webp" alt="">
+                                                <span class="ms-2 lead-sm">Over 4,000 5-star reviews</span>
+                                        </div>
+                                </div>
+                                <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                                <div class="tile">
+                                                        <img src="assets/images/illustration-multiple-platforms.webp"
+                                                                alt="Manage Accounts" class="img-fluid rounded mb-3">
+                                                        <h5 class="mb-0">Manage multiple accounts and platforms.</h5>
+                                                </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                                <div class="tile amber">
+                                                        <h5 class="mb-3 title-lg">Maintain a consistent posting
+                                                                schedule.</h5>
+                                                        <img src="assets/images/illustration-consistent-schedule.webp"
+                                                                alt="Schedule Example" class="img-fluid rounded">
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                                <div class="tile">
+                                                        <h3 class="mb-2">&gt;56%</h3>
+                                                        <p class="mb-0 muted">faster audience growth</p>
+                                                        <img src="assets/images/illustration-audience-growth.webp"
+                                                                alt="User Avatars" class="img-fluid rounded mt-3">
+                                                </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                                <div class="tile purple text-white d-flex ">
+                                                        <div>
+                                                                <div class=" d-flex align-items-center
+                                                        justify-content-between mb-2">
+                                                                        <h6 class="mb-0">Follower Growth</h6>
+                                                                        <small
+                                                                                class="bg-white text-dark rounded-pill px-2 py-1 fw-bold">+40%</small>
+                                                                </div>
+                                                                <img src="assets/images/illustration-grow-followers.webp"
+                                                                        alt="Graph Example" class="img-fluid rounded">
+                                                        </div>
+                                                        <div class="d-flex align-items-center mt-3 gap-2">
+                                                                <div class="col-12 col-sm-6">
+                                                                        <h3 class="title-lg mb-1">Grow followers with
+                                                                                non-stop content.
+                                                                        </h3>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column gap-3 Column3">
+                                <div class="tile lilac">
+                                        <h4 class="title-lg mb-3">Schedule to social media.</h4>
+                                        <div class="tile mb-3" style="background:#fff;">
+                                                <img src="assets/images/illustration-schedule-posts.webp"
+                                                        alt="Posting Time Graph" class="img-fluid rounded">
+                                        </div>
+                                        <p class="mb-0 muted">Optimize post timings to publish content at the perfect
+                                                time for your audience.</p>
+                                </div>
+
+                        </div>
+                </div>
+        </main>
+
+        <!-- Bootstrap Bundle JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
