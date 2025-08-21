@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  background: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  width: 100%;
+}
+
+/* Left Card */
+.result {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.result h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: hsl(241, 100%, 89%);
+}
+
+.circle {
+  background: linear-gradient(hsl(256, 72%, 46%), hsl(241, 72%, 46%));
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 20px;
+}
+
+.circle h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.circle span {
+  font-size: 14px;
+  color: hsl(241, 100%, 80%);
+}
+
+.result h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.result p {
+  font-size: 14px;
+  color: hsl(241, 100%, 85%);
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Right Card */
+.summary {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: hsl(224, 30%, 27%);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+}
+
+.score strong {
+  color: hsl(240, 13%, 35%);
+  font-weight: 900;
+}
+
+.btn {
+  background: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .result {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .summary {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle h1 {
+    font-size: 36px;
+  }
+
+  .result h3 {
+    font-size: 20px;
+  }
+
+  .summary h2 {
+    font-size: 16px;
+  }
+
+  .item {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
